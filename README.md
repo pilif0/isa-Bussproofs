@@ -10,7 +10,7 @@ This is meant to enable richer presentation for deeply embedded deductions withi
 - Clone the repository
 - Add it as a component to your Isabelle installation, for instance using:
     ```
-isabelle components -u PATH/TO/REPO
+    isabelle components -u PATH/TO/REPO
     ```
 
 ## Usage
