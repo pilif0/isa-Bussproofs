@@ -14,16 +14,12 @@ text\<open>
 
 datatype 'lab label = NoLabel | LeftLabel 'lab | RightLabel 'lab
 
-(* TODO could also allow line customisation *)
 datatype ('prop, 'lab) prooftree =
     Axiom 'prop
   | Unary "'lab label" 'prop "('prop, 'lab) prooftree"
   | Binary "'lab label" 'prop "('prop, 'lab) prooftree" "('prop, 'lab) prooftree"
   | Trinary "'lab label" 'prop "('prop, 'lab) prooftree" "('prop, 'lab) prooftree" "('prop, 'lab) prooftree"
 
-(* TODO add a constant that could be overloaded by clients to implicitly translate into prooftree *)
-
-(* TODO could handle inline on top of block display *)
 ML\<open>
 fun latex_label (ctxt: Proof.context) (t: term): Latex.text =
   let
