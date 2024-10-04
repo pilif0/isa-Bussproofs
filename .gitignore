@@ -1,0 +1,6 @@
+# Build directory
+output
+
+# Isabelle
+*.thy~
+ROOT~
